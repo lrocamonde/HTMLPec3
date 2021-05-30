@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Open+Sans:wght@300;400&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Alegreya', serif; /*font-family: 'Open Sans', sans-serif;*/
+    color: rgb(0, 0, 0);
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+body{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+  .imagenIndice{
+    background-image: url(../img/logo-black-es.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 10vh;
+    min-height: 60px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  
+  nav ul{
+    text-align: center;
+    list-style-type: none;
+  }
+
+  nav li a{
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+nav li a:hover{
+  color: rgb(189, 55, 0);
+}
+
+.utopia{
+  color: rgb(255, 255, 255);
+  background-color: black; 
+  width: 100vw;
+  height: 40vh; 
+} 
+
+.utopiaImagen{
+  background-image: url(../img/bg-hero-mars.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 40vw 40vh;
+  width: 100vw;
+  height: 40vh;
+  text-align: left;
+}
+
+.utopiaImagen h1{
+  font-size: 3rem;
+  padding-left: 5vw;
+  padding-top: 5vw;
+}
+
+.utopiaImagen p{
+  font-size: 2rem;
+  padding-left: 5vw;
+  font-style: italic;
+}
+
+h2{
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+.subtitulo{
+  font-size: 1.8rem;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+.mision figure{
+  margin: 0;
+}
+
+.mision img{
+  width: 90vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mision p{
+  text-align: left;
+  padding-left: 5vw;
+  font-size: 1.8rem;
+}
+
+.mision p:first-of-type{
+  font-size: 2rem;
+}
+
+.mision a{
+  color: rgb(189, 55, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mision a:hover{
+  color: rgb(0, 0, 0);
+}
