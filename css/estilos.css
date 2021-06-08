@@ -16,22 +16,30 @@ body{
   margin-right: auto; 
 }
 
-  .imagenIndice{
-    padding-left: 10vw;
-  }
-  
-  nav ul{
-    text-align: center;
-    list-style-type: none;
-    padding-left: 10vw;
-  }
+.imagenIndice{
+  padding-left: 10vw;
+}
 
-  nav li a{
-    font-size: 2rem;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    padding-right: 5vw;
+nav ul{
+  text-align: center;
+  list-style-type: none;
+  padding-left: 10vw;
+}
+
+nav li a{
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding-right: 5vw;
+}
+
+.paginaActual{
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding-right: 5vw;
+  text-decoration: underline;
 }
 
 nav li a:hover{
@@ -202,8 +210,169 @@ color: rgb(189, 55, 0);
   padding-bottom: 1rem;
 }
 
+#politicaPrivacidad a{
+  text-decoration: none;
+  color: white;
+}
+
+#politicaPrivacidad a:hover{
+  color: rgb(189, 55, 0);
+}
+
 .cursiva{
   font-style: italic;
+}
+
+/*Mars 2020*/
+
+.exploracion{
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exploracion h1{
+  font-size: 4rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.exploracion p{
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.exploracion h2{
+  font-size: 3rem;
+  padding-left: 0;
+}
+
+.objetivos{
+  text-align: left;
+  font-size: 1.6rem;
+  padding-left: 3rem;
+}
+
+figure{
+  margin: 0;
+}
+
+.video-fluid {
+  position: relative;
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+iframe.video-fluid-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-fluid::before {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+figcaption {
+  font-size: 1rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+aside{
+  text-align: left;
+}
+
+aside ul{
+  list-style-type: none;
+  padding-top: 2rem;
+  padding-left: 5vw;
+  font-size: 1.4rem;
+}
+
+aside li:first-of-type{
+  padding-top: 1rem;
+}
+
+aside li:last-of-type{
+  font-weight: bold;
+}
+
+aside a{
+  color: rgb(189, 55, 0);
+  text-decoration: none;
+}
+
+aside a:hover{
+  color: rgb(0, 0, 0);
+}
+
+/*Ciencia Ficcion*/
+
+.cienciaficcion{
+  width: 90vw;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cienciaficcion h1{
+  text-align: left;
+  font-size: 4rem;
+  padding-top: 2vh;
+  margin-bottom: 0;
+}
+
+.cienciaficcion h2{
+  text-align: left;
+  font-size: 4rem;
+  padding-left: 1rem;
+  margin-top: 2vh;
+}
+
+.cienciaficcion figure img{
+  width: 90vw;
+  height: auto;
+}
+
+.containerCF{
+  padding-bottom: 5vh;
+}
+
+.elementoCF{
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
+blockquote{
+  margin-left: 1rem;
+}
+
+blockquote p{
+  text-align: left;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+cite{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+cite::before{
+  display: inline-block;
+    content: "";
+    border-bottom: .5rem solid red;
+    width: 3rem;
+    margin-right: .2rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -271,5 +440,95 @@ color: rgb(189, 55, 0);
 
   .creditos p:first-child{
     display: block;
+  }
+
+  /*Mars 2020*/
+
+  .bodyExploracion{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .bodyExploracion article p{
+    text-align: justify;
+  }
+
+  .bodyExploracion header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  
+  .bodyExploracion main {
+    grid-column: 2;
+    grid-row: 2;
+    width: 65vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .bodyExploracion aside {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  aside ul{
+    padding-top: 4rem;
+    padding-left: 10vw;
+  }
+  
+  .bodyExploracion footer {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+
+  .video-fluid {
+    width: 100%;
+  }
+
+  .exploracion figure{
+    padding-bottom: 4rem;
+  }
+
+  /*Ciencia Ficcion*/
+
+  .cienciaficcion h1{
+    padding-left: 5vw;
+  }
+
+  .elementoCF{
+    display: flex;
+    background-color: initial;
+  }
+
+  .elementoCF div, .elementoCF figure{
+    text-align: left;
+    margin-left: 3vw;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .elementoCF div:last-of-type{
+    width: 40vw;
+  }
+
+  .tituloCF{
+    width: 13vw;
+    height: 13vw;
+  }
+
+  .tituloCF h2{
+    line-height: 4rem;
+  }
+
+  .cienciaficcion figure{
+    width: 13vw;
+  }
+
+  .cienciaficcion figure img{
+    width: 13vw;
+    height: auto;
+  }
+
+  .citaCF{
+    height: 13vw;
   }
 } 
