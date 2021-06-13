@@ -3,7 +3,7 @@
 html {
     box-sizing: border-box;
     font-size: 10px;
-    font-family: 'Alegreya', serif; /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Alegreya', serif;
     color: rgb(0, 0, 0);
   }
   *, *::before, *::after {
@@ -207,6 +207,10 @@ footer li a:hover{
 color: rgb(189, 55, 0);
 }
 
+fieldset{
+  border: 0;
+}
+
 .creditos p{
   margin-bottom: 0;
   margin-top: 0;
@@ -298,9 +302,14 @@ aside{
   text-align: left;
 }
 
+aside p{
+  padding-top: 2rem;
+  padding-left: 5vw;
+  font-size: 1.4rem;
+}
+
 aside ul{
   list-style-type: none;
-  padding-top: 2rem;
   padding-left: 5vw;
   font-size: 1.4rem;
 }
@@ -367,10 +376,10 @@ cite{
 
 cite::before{
   display: inline-block;
-    content: "";
-    border-bottom: .5rem solid red;
-    width: 3rem;
-    margin-right: .2rem;
+  content: "";
+  border-bottom: .5rem solid red;
+  width: 3rem;
+  margin-right: .2rem;
 }
 
 /*Marte en el cine*/
@@ -394,13 +403,14 @@ cite::before{
 
 .videoMarteCine{
   padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .figcaptionCine{
   display: table;
   width: 560px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 .videoMarteCine figcaption{
@@ -508,8 +518,12 @@ cite::before{
     grid-row: 2;
   }
 
-  aside ul{
+  aside p{
     padding-top: 4rem;
+    padding-left: 10vw;
+  }
+
+  aside ul{
     padding-left: 10vw;
   }
   

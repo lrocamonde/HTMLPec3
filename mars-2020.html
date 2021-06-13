@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <link rel="stylesheet" href="css/estilos.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Marte - 2020</title>
     </head>
     <body class="bodyExploracion">
@@ -43,29 +43,34 @@
             </article>           
         </main>
         <aside>
-            <ul> MISIONES A MARTE
-                <li><a href="">Mars Odyssey</a></li>
-                <li><a href="">Spirit</a></li>
-                <li><a href="">Opportunity</a></li>
-                <li><a href="">Mars Reconnaissance Orbiter</a></li>
-                <li><a href="">Phoenix Mars Lander</a></li>
-                <li><a href="">Dawn</a></li>
-                <li><a href="">Curiosity</a></li>
-                <li><a href="">Insight</a></li>
-                <li>Mars 2020</li>
-            </ul>
+            <div>
+                <p>MISIONES A MARTE</p> 
+                <ul>             
+                    <li><a href="">Mars Odyssey</a></li>
+                    <li><a href="">Spirit</a></li>
+                    <li><a href="">Opportunity</a></li>
+                    <li><a href="">Mars Reconnaissance Orbiter</a></li>
+                    <li><a href="">Phoenix Mars Lander</a></li>
+                    <li><a href="">Dawn</a></li>
+                    <li><a href="">Curiosity</a></li>
+                    <li><a href="">Insight</a></li>
+                    <li>Mars 2020</li>
+                </ul>
+            </div>           
         </aside>
         <footer>
             <div class="imagenFooter"></div>
             <p>hola@utopiamarciana.net</p>
-            <form action="" id="formularioNewsletter">
-                <legend>Siempre al día con nuestra <span class="cursiva">newsletter</span></legend>
-                <input type="email" id="correo" name="correo" value="Escribe tu email" required>
-                <div id="politicaPrivacidad">
-                    <input type="checkbox" id="politicaPrivacidad" name="politicaPrivacidad" value="Acepto la política de protección de datos" required>
-                    <label for="politicaPrivacidad">Acepto la <a href="">política de protección de datos</a><abbr title="Este campo es obligatorio" aria-label="Dato obligatorio">*</abbr></label>                 
-                </div>
+            <form action="index.html" id="formularioNewsletter">
+                <fieldset>
+                    <legend>Siempre al día con nuestra <span class="cursiva">newsletter</span></legend>
+                    <input type="email" id="correo" name="correo" value="Escribe tu email" required>
+                    <div id="politicaPrivacidad">
+                        <input type="checkbox" id="politicaPrivacidadInput" name="politicaPrivacidad" value="Acepto la política de protección de datos" required>
+                        <label for="politicaPrivacidadInput">Acepto la <a href="">política de protección de datos</a><abbr title="Este campo es obligatorio" aria-label="Dato obligatorio">*</abbr></label>                 
+                    </div>
                     <input type="submit" value="SUSCRÍBEME" id="submit">
+                </fieldset>               
             </form>
             <ul class="listaFooter">
                 <li><a href="">Aviso legal</a></li>
